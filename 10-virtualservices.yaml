@@ -1,0 +1,15 @@
+apiVersion: networking.istio.io/v1
+kind: VirtualService
+metadata:
+  name: hello-node
+  namespace: hello-node
+spec:
+  hosts:
+  - hello-node
+  gateways:
+  - hello-node
+  http:
+  - name: hello-node
+    route:
+    - destination:
+        host: hello-node
