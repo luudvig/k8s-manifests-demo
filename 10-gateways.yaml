@@ -1,8 +1,8 @@
 apiVersion: networking.istio.io/v1
 kind: Gateway
 metadata:
-  name: hello-node
-  namespace: hello-node
+  name: bookinfo-gateway
+  namespace: bookinfo
 spec:
   selector:
     app: istio-ingress

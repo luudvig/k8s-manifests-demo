@@ -1,15 +1,17 @@
 apiVersion: networking.istio.io/v1
 kind: VirtualService
 metadata:
-  name: hello-node
-  namespace: hello-node
+  name: bookinfo
+  namespace: bookinfo
 spec:
   hosts:
-  - hello-node
+  - bookinfo.local
   gateways:
-  - hello-node
+  - bookinfo-gateway
   http:
-  - name: hello-node
+  - name: bookinfo
     route:
     - destination:
-        host: hello-node
+        host: productpage
+        port:
+          number: 9080
