@@ -5,11 +5,11 @@ metadata:
   namespace: bookinfo
 spec:
   selector:
-    app: istio-ingress
+    istio: ingress
   servers:
-  - hosts:
-    - "./*"
-    port:
-      name: http2
+  - port:
       number: 80
-      protocol: HTTP2
+      name: http
+      protocol: HTTP
+    hosts:
+    - "./*"
