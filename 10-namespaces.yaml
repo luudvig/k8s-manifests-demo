@@ -4,3 +4,8 @@ metadata:
   name: bookinfo
   labels:
     istio-injection: enabled
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: shell-operator

@@ -1,0 +1,10 @@
+apiVersion: stable.example.com/v1
+kind: RotatingConfig
+metadata:
+  name: quotes
+  namespace: shell-operator
+spec:
+  values:
+    - "Hello world"
+    - "God be with ye"
+    - "Have a wonderful day"
