@@ -1,0 +1,12 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRoleBinding
+metadata:
+  name: monitor-rotatingconfigs
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: monitor-rotatingconfigs
+subjects:
+- kind: ServiceAccount
+  name: shell-operator
+  namespace: shell-operator

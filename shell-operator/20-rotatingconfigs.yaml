@@ -1,0 +1,30 @@
+apiVersion: stable.example.com/v1
+kind: RotatingConfig
+metadata:
+  name: greeting
+  namespace: shell-operator
+spec:
+  values:
+    - "Hi there"
+    - "Good day to you"
+    - "Warm greetings"
+    - "Hope you're doing well"
+    - "Wishing you a bright day"
+---
+apiVersion: stable.example.com/v1
+kind: RotatingConfig
+metadata:
+  name: spooky
+  namespace: shell-operator
+spec:
+  values:
+    - "Who's there"
+    - "Did you hear that"
+    - "Lights flickered again"
+    - "Something moved"
+    - "Cold breeze huh"
+    - "Don’t look behind you"
+    - "Shadows acting weird"
+    - "It’s whispering again"
+    - "Door just creaked"
+    - "Probably nothing"
